@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tarea4.MainPage">
+
+    <StackLayout>
+        <Label x:Name="lblTitulo" Text="Digite 2 números y elija una operación" 
+               FontSize="Large"
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+
+        <Entry x:Name="num1"  Placeholder="Escribir número" FontFamily="Helvetica" FontSize="Body" FontAttributes="Italic"/>
+        <Entry x:Name="num2" Placeholder="Escribir número" FontFamily="Helvetica" FontSize="Body" FontAttributes="Italic"/>
+        <Label x:Name="label" Text="Resultado:"/>
+
+        <ImageButton Source="suma.png" x:Name="bntSuma"/>
+        <ImageButton Source="resta.png" x:Name="bntResta"/>
+        <ImageButton Source="division.png" x:Name="bntDiv"/>
+        <ImageButton Source="multiply.png" x:Name="bntMulti" />
+
+
+    </StackLayout>
+
+</ContentPage>

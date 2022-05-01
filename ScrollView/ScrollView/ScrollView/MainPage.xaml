@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScrollView.MainPage">
+
+    <StackLayout>
+        <Button Text="Login" />
+        <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand">
+            <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
+                <Label Text="A" />
+                <Label Text="B" />
+                <!-- snipped all the extra labels for code sample clarity -->
+                <Label Text="C" />
+                <Label Text="D" />
+                <Label Text="E" />
+                <Label Text="F" />
+                <Label Text="F" />
+
+                <Label Text="F" />
+
+                <Label Text="F" />
+                <Label Text="F" />
+                <Label Text="F" />
+                <Label Text="F" />
+                <Label Text="F" />
+                <Label Text="F" />
+                <Label Text="F" />
+                <Label Text="F" />
+                <Label Text="F" />
+                <Label Text="F" />
+                <Label Text="F" />
+                <Label Text="F" />
+                <Label Text="F" />
+                <Label Text="F" />
+                <Label Text="F" />
+                <Label Text="F" />
+                <Label Text="F" />
+                <Label Text="F" />
+                <Label Text="F" />
+                <Label Text="F" />
+                <Label Text="F" />
+                <Label Text="F" />
+                <Label Text="F" />
+                <Label Text="F" />
+                <Label Text="F" />
+                <Label Text="F" />
+                <Label Text="F" />
+                <Label Text="F" />
+                <Label Text="F" />
+                <Label Text="F" />
+                <Label Text="F" />
+                <Label Text="F" />
+                <Label Text="F" />
+                <Label Text="F" />
+
+
+                <Label Text="Este es el ultimo elemento" />
+                <Button Text="Clear"/>
+                <TableView Intent="Settings" >
+                    <TableRoot>
+                        <TableSection Title="Ring">
+                            <SwitchCell Text="Nuevo Correo de voz"/>
+                            <SwitchCell Text="Nuevo Mensaje" On="True"/>
+                        </TableSection>
+
+                        <TableSection Title="Personal">
+                            <EntryCell Text="Hola" x:Name="txt"/>
+                        </TableSection>
+                    </TableRoot>
+                </TableView>
+                <Label Text="********** FINAL ********** " />
+            </StackLayout>
+        </ScrollView>
+        <Button Text="Login" />
+    </StackLayout>
+
+</ContentPage>

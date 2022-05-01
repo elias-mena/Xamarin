@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Login.MainPage"
+             BackgroundColor="White">
+
+    <ContentPage.Content>
+
+        <Grid>
+            <Image Source="fondo.jpg" Aspect="AspectFill"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="90"/>
+                    <!---->
+                    <RowDefinition Height="Auto"/>
+                    <!--1-->
+                    <RowDefinition Height="Auto"/>
+                    <!--2-->
+                    <RowDefinition Height="Auto"/>
+                    <!--3-->
+                    <RowDefinition Height="Auto"/>
+                    <!--4-->
+                    <RowDefinition Height="Auto"/>
+                    <!--5-->
+                    <RowDefinition Height="Auto"/>
+                    <!--6-->
+                    <RowDefinition Height="Auto"/>
+                    <!--8-->
+
+
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+
+                <!-- Stack layout con mensajes de bienvenida-->
+                <StackLayout Grid.Row="2" HorizontalOptions="Center" Orientation="Vertical" Margin="0,0,0,10">
+                    <Label
+                             Text="Welcome!"
+                            FontAttributes="Bold"
+                             HorizontalOptions="Center"
+                             FontSize="32"
+                            Margin="0,0,0,5"
+                             WidthRequest="300"
+                             TextColor="White"
+                         />
+                    <Label
+                            Text="Sign in to continue"
+                            TextColor="White"
+                            FontSize="15"
+                            WidthRequest="300"
+                    />
+                </StackLayout>
+                
+                <!-- Stack layout con el entry de email -->
+                <StackLayout Grid.Row="3" HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical"  >
+                    <Label
+                    Text="Email"
+                    FontAttributes="Bold"
+                    FontSize="13"
+                    TextColor="White"
+               
+                    />
+                    <Frame
+                    HasShadow="True"
+                    Padding="8"
+                    CornerRadius="7"
+                    >
+                        <Entry
+                    Placeholder="email"
+                    MaxLength="25"
+                    IsEnabled="True"
+                    FontSize="15"
+                    />
+                    </Frame>
+                </StackLayout>
+                <!-- Stack layout con el entry de password -->
+                <StackLayout Grid.Row="4" HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical" >
+
+                    <StackLayout Orientation="Horizontal" VerticalOptions="Center" Padding="0">
+                        <Label
+                    Text="Password"
+                    FontAttributes="Bold"
+                    FontSize="13"
+                    TextColor="White"
+                     VerticalOptions="Center"
+                     WidthRequest="150"
+                    />
+                    </StackLayout>
+                    <Frame
+                     HasShadow="True"
+                     Padding="8"
+                     CornerRadius="7"
+                     >
+
+                        <Entry
+                    Placeholder="******************"
+                    IsPassword="True"
+                    FontSize="15"
+                    IsEnabled="True"
+                    
+                    />
+
+                    </Frame>
+
+                </StackLayout>
+
+
+                <StackLayout Grid.Row="5" HorizontalOptions="Center" Orientation="Vertical" >
+                    <Button
+                        x:Name="btnLog"
+                     Text="Log in"
+                            BackgroundColor="White" 
+                            TextColor="Black " 
+                            Font="Montserrat-Medium.otf"                             
+                            FontSize="15"
+                            BorderWidth="1.5"
+                            WidthRequest="300"
+                            HeightRequest="50"
+                            IsEnabled="True" 
+                            BorderRadius="10"/>
+                    <Button
+                        x:Name="btnSingIn"
+                        Text="Sing In"
+                            BackgroundColor="White" 
+                            TextColor="Black " 
+                            Font="Montserrat-Medium.otf"                             
+                            FontSize="15"
+                            BorderWidth="1.5"
+                            WidthRequest="300"
+                            HeightRequest="50"
+                            IsEnabled="True" 
+                            BorderRadius="10"/>
+
+                </StackLayout>
+
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+
+</ContentPage>

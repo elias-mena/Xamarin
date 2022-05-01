@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Bank.MainPage">
+
+ 
+        <Grid>
+            <Image Source="LogoBank1.jpg" Aspect="AspectFill"/>
+            <BoxView Color="GreenYellow" Opacity="0.5"/>
+            
+            <Grid>
+                
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                
+                <Image Grid.Row="0" Source="LogoBank2.jpg" WidthRequest="100" Aspect="AspectFill"
+                       HeightRequest="100" Margin="0,50,0,30"/>
+                
+                <StackLayout Grid.Row="1" Padding="10,20">
+                    <Entry Placeholder="Correo electrónico" PlaceholderColor="#D600000"/>
+                    <Entry Placeholder="Contraseña" PlaceholderColor="#D600000" IsPassword="True"/>
+
+                    <Button Text="Iniciar Sesión" BackgroundColor="#003300" TextColor="#33ff33" 
+                BorderRadius="20" x:Name="btnIr"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Recuperar Contraseña" TextColor="#D60000"/>
+                        <Label Text="Registrarse" TextColor="#D60000" HorizontalOptions="FillAndExpand"
+                   FontAttributes="Bold" HorizontalTextAlignment="End" />
+                    </StackLayout>
+                </StackLayout>
+                
+            </Grid>
+            
+        </Grid>
+
+
+</ContentPage>

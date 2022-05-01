@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Bank.TheBank">
+    <ContentPage.Content>
+        <Grid>
+            <Image Source="LogoBank1.jpg" Aspect="AspectFill"/>
+            <BoxView Color="GreenYellow" Opacity="0.5"/>
+            <StackLayout>
+                <Image Grid.Row="0" Source="LogoBank2.jpg" WidthRequest="100"
+                       HeightRequest="100" Margin="0,50,0,30"/>
+                
+                <Label Text="Menú de Opciones" FontSize="20" TextColor="Red"
+                       FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                
+                <Button Text="Depositar" BackgroundColor="#003300" TextColor="#33ff33" 
+                BorderRadius="20"/>
+                
+                <Button Text="Retirar" BackgroundColor="#003300" TextColor="#33ff33" 
+                BorderRadius="20"/>
+                
+                <Button Text="Ubicación" BackgroundColor="#003300" TextColor="#33ff33" 
+                BorderRadius="20"/>
+                
+                <Button Text="Autenticar (foto)" BackgroundColor="#003300" TextColor="#33ff33" 
+                BorderRadius="20"/>
+                
+                <Button Text="Salir" BackgroundColor="Black" TextColor="Red" 
+                BorderRadius="10"/>
+                
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

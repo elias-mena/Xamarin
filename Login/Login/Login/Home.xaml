@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Login.Home">
+    <ContentPage.Content>
+        <Grid>
+            <Image Source="fondo.jpg" Aspect="AspectFill"/>
+            <Grid>
+                <StackLayout>
+
+                    <Label Text="Menú de Opciones" FontSize="20" TextColor="White"
+                       FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+
+                    <Button Text="Smart Phones" BackgroundColor="White" 
+                            TextColor="Black " 
+                            Font="Montserrat-Medium.otf"                             
+                            FontSize="15"
+                            BorderWidth="1.5"
+                            WidthRequest="300"
+                            HeightRequest="50"
+                            IsEnabled="True" 
+                            BorderRadius="10"/>
+
+                    <Button Text="Tablets" BackgroundColor="White" 
+                            TextColor="Black " 
+                            Font="Montserrat-Medium.otf"                             
+                            FontSize="15"
+                            BorderWidth="1.5"
+                            WidthRequest="300"
+                            HeightRequest="50"
+                            IsEnabled="True" 
+                            BorderRadius="10"/>
+
+                    <Button Text="Audio" BackgroundColor="White" 
+                            TextColor="Black " 
+                            Font="Montserrat-Medium.otf"                             
+                            FontSize="15"
+                            BorderWidth="1.5"
+                            WidthRequest="300"
+                            HeightRequest="50"
+                            IsEnabled="True" 
+                            BorderRadius="10"/>
+
+                    <Button Text="Accesorios" BackgroundColor="White" 
+                            TextColor="Black " 
+                            Font="Montserrat-Medium.otf"                             
+                            FontSize="15"
+                            BorderWidth="1.5"
+                            WidthRequest="300"
+                            HeightRequest="50"
+                            IsEnabled="True" 
+                            BorderRadius="10"/>
+
+                    <Button Text="Salir" 
+                            BackgroundColor="White" 
+                            TextColor="Black " 
+                            Font="Montserrat-Medium.otf"                             
+                            FontSize="15"
+                            BorderWidth="1.5"
+                            WidthRequest="300"
+                            HeightRequest="50"
+                            IsEnabled="True" 
+                            BorderRadius="10"/>
+  
+                </StackLayout>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

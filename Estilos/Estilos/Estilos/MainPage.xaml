@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Estilos.MainPage">
+
+    <ContentPage.Resources>
+        <!--Estilo explícito, para implícito quitamos el x:key y aplican para todos los objetos del tipo de TargetType-->
+        <Style x:Key="MiEstilo"
+               TargetType="Label">
+            <Setter Property="FontSize" Value="40"/>
+            <Setter Property="TextColor" Value="Red"/>
+            <Setter Property="HorizontalTextAlignment" Value="Center"/>
+        </Style>
+        <!--Estilo que se basa el estilo de arriba -->
+        <Style x:Key="OtroEstilo"
+               BasedOn="{StaticResource MiEstilo}"
+               TargetType="Label">
+            <Setter Property="RotationX" Value="40"/>
+        </Style>
+        <!--Estilo con trigger para snimar los entrys cuando tienen el enfoque -->
+        <Style TargetType="Entry">
+            <Style.Triggers>
+                <Trigger Property="IsFocused"
+                         Value="True"
+                         TargetType="Entry">
+                    <Setter Property="TextColor" Value="Red"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    
+        <!--Habilita un boton en función del texto de un entry-->
+        <Style x:Key="EstiloBoton"
+               TargetType="Button">
+            <Style.Triggers>
+                <DataTrigger TargetType="Button"
+                             Binding="{Binding Text.Length, Source={Reference entry1} }"
+                             Value="0">
+                    <Setter Property="IsEnabled" Value="False"/>
+
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+    </ContentPage.Resources>
+
+    <StackLayout>
+            <Label Text="Welcome to Xamarin.Forms!" 
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand"
+                   Style="{StaticResource MiEstilo}"/>
+        
+        <!--Estilo con sintaxis de subelementos sólo usar esto cuando no lo vamos a replicar
+        <Button Text="Botón">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="TextColor"
+                            Value="Red"/>
+                </Style>
+            </Button.Style>
+        </Button> -->
+        
+<!--Este botón se habilita cuando entry1 tenga texto-->
+        <Button Text="Botón"
+                Style="{StaticResource EstiloBoton}"/>
+
+        <Entry/>
+        <Entry/>
+        <Entry x:Name="entry1"
+               Text=""/>
+    </StackLayout>
+
+</ContentPage>

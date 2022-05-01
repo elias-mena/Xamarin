@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Recursos.App">
+    <Application.Resources> <!-- Aquí declaramos elementos que podemos utilizar en todas partes-->
+        <Color x:Key="MiColor">Blue</Color>
+        <x:Double x:Key="DefaultFontSize">40</x:Double>
+    </Application.Resources>
+</Application>

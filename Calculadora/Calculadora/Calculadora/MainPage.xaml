@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:local="clr-namespace:Calculadora"
+             mc:Ignorable =" d"
+             x:Class="Calculadora.MainPage"
+             >
+
+    <ContentPage.ToolbarItems>
+
+        <ToolbarItem x:Name="tbVer"
+            Text="Ver Historial" 
+            />
+
+        <ToolbarItem x:Name="tbGuardar"
+            IconImageSource="Save.png" 
+            Priority="0" Order="Primary" 
+            />
+
+    </ContentPage.ToolbarItems>
+
+    <StackLayout>
+
+        <Label x:Name="lblresult" 
+               Margin="5" 
+               Text="0" 
+               FontSize="Header" 
+               HorizontalOptions="EndAndExpand"
+               />
+
+        <Entry x:Name="num1"  
+               Placeholder="Escribir número" 
+               FontFamily="Helvetica" 
+               FontSize="Medium" 
+               FontAttributes="Italic"
+               />
+        
+        <Entry x:Name="num2" 
+               Placeholder="Escribir número" 
+               FontFamily="Helvetica" 
+               FontSize="Medium" 
+               FontAttributes="Italic"
+               />
+
+        <Label Text=""/>
+
+            <!--Grid para los botones-->
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <ImageButton x:Name="bntSuma"
+                Grid.Row="0" 
+                Grid.Column="0" 
+                Source="suma.png" 
+                />
+            
+            <ImageButton x:Name="bntResta"
+                Grid.Row="0" 
+                Grid.Column="1" 
+                Source="resta.png" 
+                />
+            
+            <ImageButton 
+                x:Name="bntDiv"
+                Grid.Row="1" 
+                Grid.Column="0" 
+                Source="division.png" 
+                />
+            
+            <ImageButton x:Name="bntMulti"
+                Grid.Row="1" 
+                Grid.Column="1" 
+                Source="multiply.png" 
+                />
+        </Grid>
+
+        <Button x:Name="btnLimpiar" 
+            Text="Limpiar" 
+            HorizontalOptions="FillAndExpand" 
+            HeightRequest="100"
+            />
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ActionBar.MainPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="New"/>
+        <ToolbarItem IconImageSource="homeIcon24.png" Priority="0" Order="Primary" x:Name="Tb1"/>
+        <ToolbarItem IconImageSource="aboutIcon24.png" Priority="1" Order="Primary" x:Name="Tb2"/>
+        <ToolbarItem Text="About" Priority="2" Order="Secondary" x:Name="Tb3"/>
+        <ToolbarItem Text="Logout" Priority="3" Order="Secondary" x:Name="Tb4"/>
+        <ToolbarItem Text="Ring" Priority="3" Order="Secondary" x:Name="Tb5"/>
+        <ToolbarItem Text="Mail" Priority="3" Order="Secondary" x:Name="Tb6"/>
+
+    </ContentPage.ToolbarItems>
+    <StackLayout>
+            <Label Text="Welcome to Xamarin.Forms!" 
+                   HorizontalTextAlignment="Center" 
+                   TextColor="White" 
+                   FontSize="36"
+                   x:Name="lbl01"/>
+        <Label Text="Probar Archivos" x:Name="lblTitulo"/>
+        <Entry Text="Texto a guardar" x:Name="txtGuardar"/>
+        <Entry Text="Texto recuperado" x:Name="txtRestored"/>
+
+        <Button Text="Guardar" x:Name="BtnSave"/>
+        <Button Text="Recuperar" x:Name="BtnRestore"/>
+
+    </StackLayout>
+
+</ContentPage>

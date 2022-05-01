@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Navigation.MainPage"
+             Title="Página 1">
+
+    <StackLayout>
+            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        <Button Text="Navegar"
+             Clicked="Button_Clicked"/>
+    </StackLayout>
+
+</ContentPage>

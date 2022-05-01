@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TareaInt.MainPage">
+
+    <StackLayout>
+        <Entry x:Name="txtInfo" Placeholder="Texto"/>
+        <Entry x:Name="txtLevel" Placeholder="Nivel de importancia"/>
+        <Button Text="Guardar" x:Name="BtnGuardar"/>
+        <Button Text="Leer" x:Name="BtnLeer"/>
+        <Button Text="Limpiar" x:Name="BtnLimpiar"/>
+        <Label Text="" x:Name="lblMensaje"/>
+ 
+        <ListView x:Name="userList">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid>
+                            <Label Text="{Binding Id}" />
+                            <Label Grid.Column="1" Text="{Binding Description}" />
+                            <Label Grid.Column="2" Text="{Binding Importancia}" />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Label Text="Modificar registro"/>
+        <Entry x:Name="txtId" Placeholder="Número de ID"/>
+        <Button Text="Modificar" x:Name="BtnModif"/>
+
+
+    </StackLayout>
+
+</ContentPage>

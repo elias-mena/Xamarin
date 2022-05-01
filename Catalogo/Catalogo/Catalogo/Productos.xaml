@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+            xmlns:catalogo="clr-namespace:Catalogo" 
+            mc:Ignorable ="d"
+            x:Class="Catalogo.Productos">
+
+
+    <ContentPage Title="Smart Phones" >
+
+        <StackLayout>
+            <ListView ItemsSource="{Binding Celphones} " HasUnevenRows="True"
+            ItemSelected="ListView_ItemSelected" ItemTapped="ListView_ItemTapped">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+
+                                <Image Source="{Binding Img}"
+                                   Margin="10"
+                                   WidthRequest="200"
+                                   HeightRequest="200"/>
+
+                                <StackLayout Grid.Column="1">
+                                    <Label Text="{Binding Name}" FontSize="Large" TextColor="White"/>
+                                    <Label Text="{Binding Brand}" TextColor="White" />
+                                    <Label Text="{Binding Description}" TextColor="White" />
+                                    <Label Text="{Binding Price}" TextColor="White"/>
+                                </StackLayout>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="Tablets" >
+        <StackLayout>
+            <ListView ItemsSource="{Binding Tablets} " HasUnevenRows="True"
+            ItemSelected="ListView_ItemSelected" ItemTapped="ListView_ItemTapped">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+
+                                <Image Source="{Binding Img}"
+                                   Margin="10"
+                                   WidthRequest="200"
+                                   HeightRequest="200"/>
+
+                                <StackLayout Grid.Column="1">
+                                    <Label Text="{Binding Name}" FontSize="Large" TextColor="White"/>
+                                    <Label Text="{Binding Brand}" TextColor="White" />
+                                    <Label Text="{Binding Description}" TextColor="White" />
+                                    <Label Text="{Binding Price}" TextColor="White"/>
+                                </StackLayout>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage>
+
+    <ContentPage Title="Audio " >
+        <StackLayout>
+            <ListView ItemsSource="{Binding Audio} " HasUnevenRows="True"
+            ItemSelected="ListView_ItemSelected" ItemTapped="ListView_ItemTapped">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+
+                                <Image Source="{Binding Img}"
+                                   Margin="10"
+                                   WidthRequest="200"
+                                   HeightRequest="200"/>
+
+                                <StackLayout Grid.Column="1">
+                                    <Label Text="{Binding Name}" FontSize="Large" TextColor="White"/>
+                                    <Label Text="{Binding Brand}" TextColor="White" />
+                                    <Label Text="{Binding Description}" TextColor="White" />
+                                    <Label Text="{Binding Price}" TextColor="White"/>
+                                </StackLayout>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage>
+</TabbedPage>
